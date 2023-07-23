@@ -1,0 +1,52 @@
+<!-- Day06/html/main_page.html -->
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/main_page.css">
+        <title>작품 분석 서비스</title>
+        <script src="form.js"></script>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="site-logo">
+                <a id="site-logo-link" href="../html/main_page.html" target="_self">
+                    <img id="site-logo-iamge" src="../static/books.png" alt="사진이 뜨지 않습니다"/>
+                </a>
+            </div>    
+            <div class="site-name">
+                <a id="site-logo-link" href="../html/main_page.html" target="_self">
+                    작품 분석 서비스
+                </a>
+            </div>                
+        </header>
+
+        <section>
+            <div class="search-section">
+                <form class="search-form" name="search" action="form.js" method="get" onsubmit="">
+                    <div class="search-input">
+                        <input id="search-text" type="search" name="search-keyword">
+                    </div>
+                    <div class="search-button">
+                        <input id="search-submit" type="submit" value="검색"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="slide">
+            </div>
+        </section>
+    </body>
+
+    <footer class="site-footer">
+        <div class="site-description">
+            <p>사이트 : 작품 분석 서비스</p>
+            <p>문의 : animus666@naver.com</p>
+        </div>
+    </footer>
+
+</html>

@@ -1,0 +1,69 @@
+<!-- Day06/html/search_page.html -->
+<!DOCTYPE html>
+<html lang="ko">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/work_page.css">
+        <title>작품 분석 서비스</title>
+        <script src="work.js"></script>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="site-logo">
+                <a id="site-logo-link" href="../html/main_page.html" target="_self">
+                    <img id="site-logo-iamge" src="../static/books.png" alt="사진이 뜨지 않습니다"/>
+                </a>
+            </div>    
+            <div class="site-name">
+                <a id="site-logo-link" href="../html/main_page.html" target="_self">
+                    작품 분석 서비스
+                </a>
+            </div>                
+        </header>
+
+        <section>
+            <div class="search-section">
+                <form class="search-form" name="search" action="form.js" method="get" onsubmit="">
+                    <div class="search-input">
+                        <input id="search-text" type="search" name="search-keyword">
+                    </div>
+                    <div class="search-button">
+                        <input id="search-submit" type="submit" value="검색"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="work-analysis-section">
+                <!-- 작품A -->
+                <div class="work_A">
+                    <div class="work_A_image">
+                        <img id="work_A_image_link" src="../static/대학원_탈출일기.jpg" alt="사진이 뜨지 않습니다"/>
+                    </div>
+                    <div class="work_A_instruction">
+                        <p id="work_A_title">대학원 탈출일지</p>
+                        <p id="work_A_author">글/그림: 요다</p>
+                        <p id="work_A_description">
+                            연구에 꿈을 가지고 대학원을 선택한 병아리 요다. 
+                            예상과는 다르게 연구에 관심 없는 교수님과 똥군기의 연구실 분위기에 당황한다. 
+                            요다는 과연 무사히 대학원을 탈출할 수 있을 것인가?!
+                        </p>
+                    </div>
+                </div>
+                <div class="work-analysis">
+
+                </div>
+            </div>
+        </section>
+
+    <footer class="site-footer">
+        <div class="site-description">
+            <p>사이트 : 작품 분석 서비스</p>
+            <p>문의 : animus666@naver.com</p>
+        </div>
+    </footer>
+
+</html>
