@@ -1,0 +1,20 @@
+HTMLCollection과 NodeList 차이
+
+HTMLCollection
+    노드 객체의 상태 변화를 실시간으로 반영하는 살아있는 live DOM 컬렉션 객체
+    객체가 스스로 실시간 노드 객체의 상태 변경을 반영함
+    요소 노드의 추가나 삭제를 바로 반영해주기 때문에 재선언 및 재할당 하지 않아도 값이 자동으로 변경됨
+     getElementsByTagname, getElementsByClassName 메서드를 사용할 때 반환되는 객체
+NodeList
+    노드 객체의 상태 변화를 반영하지 않는 non-live DOM 컬렉션 객체
+    노드가 변경되도 그 상태를 반영하지 않음
+    querySelectorAll 등의 메서드를 사용할 때 반환되는 객체
+    대부분의 경우 노드 객체의 상태 변경을 실시간으로 반영하지 않고 과거의 정적 상태를 유지하지만, 
+    childNodes 프로퍼티가 반환하는 NodeList 객체의 경우 
+    HTMLCollection 객체와 같이 실시간으로 노드 객체의 상태 변경을 반영하는 live 객체로 동작힘
+
+결론
+    해당 과제의 경우 getElementsByTagname 메서드를 사용하여 HTMLCollection 객체를 반환받음
+    이에, 노드의 추가 및 삭제를 바로 반영하여 값이 자동으로 변경되기 때문에
+    당시 콘솔에서는 consol.log 함수의 결과로 0이 나왔지만, 
+    li 태그 요소들이 보여진 것이라고 생각함
